@@ -3,7 +3,6 @@ from flask import Blueprint, render_template, session, redirect, url_for, \
 from flask.ext.openid import COMMON_PROVIDERS
 from flask_website import oid
 from flask_website.search import search as perform_search
-from flask_website.twitter import flask_tweets
 from flask_website.utils import requires_login, request_wants_json
 from flask_website.database import db_session, User
 from flask_website.listings.releases import releases
@@ -15,7 +14,7 @@ mod = Blueprint('general', __name__)
 def index():
     if request_wants_json():
         return jsonify(releases=[r.to_json() for r in releases])
-    return render_template('general/index.html', tweets=flask_tweets,
+    return render_template('general/index.html',
                            latest_release=releases[-1])
 
 

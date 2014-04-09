@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, jsonify
-from flask_website.twitter import flask_tweets
 from flask_website.utils import request_wants_json
 from flask_website.listings.projects import projects
 
@@ -14,13 +13,6 @@ def index():
 @mod.route('/irc/')
 def irc():
     return render_template('community/irc.html')
-
-
-@mod.route('/twitter/')
-def twitter():
-    if request_wants_json():
-        return jsonify(tweets=[t.to_json() for t in flask_tweets])
-    return render_template('community/twitter.html', tweets=flask_tweets)
 
 
 @mod.route('/badges/')

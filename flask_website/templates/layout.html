@@ -23,13 +23,5 @@
   {% endfor %}
   {% block body %}{% endblock %}
   <p class=footer>
-    &copy; Copyright 2010 by <a href=http://lucumr.pocoo.org/>Armin Ronacher</a> //
-    {% if g.user %}
-    <a href="{{ url_for('general.profile') }}">profile</a> /
-    <a href="{{ url_for('general.logout') }}" title="signed in as {{
-      g.user.name }} [{{ g.user.openid }}]{% if g.user.is_admin
-      %} - Administrator{% endif %}">sign out</a>
-    {% else %}
-    <a href="{{ url_for('general.login') }}">sign in</a>
-    {% endif %}
+    &copy; Copyright 2014 by <a href=http://lucumr.pocoo.org/>Armin Ronacher</a>
 </div>
