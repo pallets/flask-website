@@ -262,6 +262,15 @@ extensions = [
         github='ask/flask-celery',
         approved=False
     ),
+    Extension('Flask-Cors', 'Cory Dolphin',
+        description='''
+            <p>
+              Cross Origin Resource Sharing (CORS)  for flask
+        ''',
+        docs='http://flask-cors.readthedocs.org/en/latest/',
+        github='wcdolphin/flask-cors',
+        approved=False
+    ),
     Extension('Frozen-Flask', 'Simon Sapin',
         description='''
             <p>
