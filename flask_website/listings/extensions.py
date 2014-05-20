@@ -535,6 +535,16 @@ extensions = [
         github='singingwolfboy/flask-misaka',
         approved=True,
     ),
+    Extension('Flask-Via', 'SOON_, Chris Reeves',
+        description='''
+            <p>
+                Provides a clean, simple URL routing framework for growing Flask 
+                Applications.
+        ''',
+        docs='http://flask-via.soon.build',
+        github='thisissoon/Flask-Via',
+        approved=True,
+    ),
 ]
 
 
