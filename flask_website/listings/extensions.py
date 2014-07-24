@@ -645,6 +645,16 @@ unlisted = [
             Unlisted because duplicates the Flask-SeaSurf extension.
         '''
     ),
+    Extension('Flask-QueryInspect', 'Bret Barker',
+        description='''
+            <p>Provides metrics on SQL queries (using SQLAlchemy) executed
+             for each request.</p>
+        ''',
+        docs='https://github.com/noise/flask-queryinspect',
+        github='https://github.com/noise/flask-queryinspect',
+        notes='''
+        '''
+    ),
 ]
 
 
