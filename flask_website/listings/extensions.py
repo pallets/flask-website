@@ -535,6 +535,14 @@ extensions = [
         github='singingwolfboy/flask-misaka',
         approved=True,
     ),
+    Extension('Flask-Dance', 'David Baumgold',
+        description='''
+            Doing the OAuth dance with style using Flask, requests, and oauthlib.
+        ''',
+        docs='https://flask-dance.readthedocs.org/en/latest/',
+        github='singingwolfboy/flask-dance',
+        approved=True,
+    ),
 ]
 
 
