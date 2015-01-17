@@ -16,6 +16,7 @@
   <ul>
   {% for snippet in snippets %}
     <li><a href="{{ snippet.url }}">{{ snippet.title }}</a>
+        <small>({{ snippet.pub_date.strftime('%Y-%m-%d') }})</small>
   {% endfor %}
   </ul>
   {% endif %}
