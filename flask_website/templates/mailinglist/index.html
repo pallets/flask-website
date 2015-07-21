@@ -4,18 +4,27 @@
   <h2>Mailinglist Information</h2>
   <p>
     There is a mailinglist for Flask hosted on <a
-    href=http://librelist.com/>librelist</a> you can use for both user requests
-    and development discussions.
+    href="https://mail.python.org/mailman/listinfo/flask/">python.org</a> that
+    you can use for both user requests and development discussions that may not
+    fit well in a Github issue or StackOverflow question.
 
   <p>
-    To subscribe, send a mail to <em>flask@librelist.com</em> and reply
-    to the confirmation mail. Make sure to check your Spam folder, just in
-    case. To unsubscribe again, send a mail to
-    <em>flask-unsubscribe@librelist.com</em> and reply to the
-    confirmation mail.
+    You can subscribe or change your subscription options at
+    <a href="https://mail.python.org/mailman/listinfo/flask/">
+    https://mail.python.org/mailman/listinfo/flask/</a>. If you're having
+    problems, don't forget to check your Spam folder.
 
   <p>
-    The <a href="{{ url_for('mailinglist.archive') }}">mailinglist archive</a>
-    is synched every hour. Go there to read up old discussions grouped by
-    thread. 
+    You can view the list archives at <a
+    href="http://mail.python.org/pipermail/flask/">
+    http://mail.python.org/pipermail/flask/</a>.
+
+  <p>
+    Before July 2015, we used librelist for the mailing list. You can view those
+    archives here: <a href="{{ url_for('mailinglist.archive') }}">
+    {{ url_for('mailinglist.archive') }}</a>. Just keep in mind any new messages
+    should now be posted to <a
+    href="https://mail.python.org/mailman/listinfo/flask/">the python.org
+    Flask mailing list</a> mentioned above.
+
 {% endblock %}
