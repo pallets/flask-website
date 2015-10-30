@@ -130,11 +130,6 @@ projects = {
             <p>
               A collection of responsive web designs.
         '''),
-        Project('Flask Feedback', 'http://feedback.flask.pocoo.org/', u'''
-            <p>
-              Website by the Flask project that collects feedback from
-              users.
-        ''', source='https://github.com/mitsuhiko/flask-feedback'),
         Project('pizje.ns-keip', 'http://pizje.ns-keip.ru/', u'''
             <p>
               Russian game website.
