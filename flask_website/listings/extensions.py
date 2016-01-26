@@ -101,15 +101,15 @@ extensions = [
             doing different things, but the latter is not yet approved.
         '''
     ),
-    Extension('Flask-Uploads', 'Matthew Frazier',
+    Extension('Flask-Uploads', 'Max Countryman',
         description='''
             <p>Flask-Uploads allows your application to flexibly and
             efficiently handle file uploading and serving the uploaded files.
             You can create different sets of uploads - one for document
             attachments, one for photos, etc.
         ''',
-        bitbucket='leafstorm/flask-uploads',
-        docs='http://pythonhosted.org/Flask-Uploads/',
+        github='maxcountryman/flask-uploads',
+        docs='https://flask-uploads.readthedocs.org/en/latest/',
         approved=True
     ),
     Extension('Flask-Themes', 'Matthew Frazier',
