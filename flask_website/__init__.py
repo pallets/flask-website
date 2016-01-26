@@ -1,6 +1,6 @@
 from datetime import datetime
 from flask import Flask, session, g, render_template
-from flask.ext.openid import OpenID
+from flask_openid import OpenID
 
 app = Flask(__name__)
 app.config.from_object('websiteconfig')
