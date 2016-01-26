@@ -5,10 +5,10 @@ from flask import url_for, Markup
 from flask_website import app
 from flask_website.search import Indexable
 
-
 _doc_body_re = re.compile(r'''(?smx)
     <title>(.*?)</title>.*?
-    <div\s+class="body">(.*?)<div\s+class="sphinxsidebar">
+    <div.*?class=".*?body.*?>(.*)
+    <div.*?class=".*?sphinxsidebar
 ''')
 
 
