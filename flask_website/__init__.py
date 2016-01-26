@@ -1,3 +1,4 @@
+from datetime import datetime
 from flask import Flask, session, g, render_template
 from flask.ext.openid import OpenID
 
@@ -22,6 +23,11 @@ def load_current_user():
 @app.teardown_request
 def remove_db_session(exception):
     db_session.remove()
+
+
+@app.context_processor
+def current_year():
+    return {'current_year': datetime.utcnow().year}
 
 
 app.add_url_rule('/docs/', endpoint='docs.index', build_only=True)
