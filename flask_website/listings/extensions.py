@@ -562,6 +562,16 @@ extensions = [
         docs='http://flask-limiter.readthedocs.org/en/latest/',
         approved=False,
     ),
+    Extension('Flask-User', 'Ling Thio',
+        description='''
+            Customizable User Account Management for Flask:
+            Register, Confirm email, Login, Change username, Change password, Forgot password,
+            Role-based Authorization and Internationalization.
+        ''',
+        github='https://github.com/lingthio/flask-user',
+        docs='http://pythonhosted.org/Flask-User/',
+        approved=True,
+    ),
 ]
 
 
