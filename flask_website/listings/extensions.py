@@ -552,6 +552,16 @@ extensions = [
         github='singingwolfboy/flask-dance',
         approved=True,
     ),
+    Extension('Flask-Limiter', 'Ali-Akber Saifee',
+              description='''
+            <p>Adds Ratelimiting support to Flask.
+            Supports a configurable storage backend with implementations for
+            in-memory, redis and memcache.
+        ''',
+        github='alisaifee/flask-limiter',
+        docs='http://flask-limiter.readthedocs.org/en/latest/',
+        approved=False,
+    ),
 ]
 
 
