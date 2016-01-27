@@ -33,9 +33,7 @@ def current_year():
 app.add_url_rule('/docs/', endpoint='docs.index', build_only=True)
 app.add_url_rule('/docs/<path:page>/', endpoint='docs.show',
                  build_only=True)
-app.add_url_rule('/docs/flask-docs.pdf', endpoint='docs.pdf',
-                 build_only=True)
-app.add_url_rule('/docs/flask-docs.zip', endpoint='docs.zip',
+app.add_url_rule('/docs/<version>/.latex/Flask.pdf', endpoint='docs.pdf',
                  build_only=True)
 
 from flask_website.views import general
