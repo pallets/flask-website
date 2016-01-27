@@ -589,6 +589,14 @@ extensions = [
         docs='https://github.com/noise/flask-queryinspect',
         github='https://github.com/noise/flask-queryinspect',
     ),
+    Extension('Flask-Stormpath', 'Randall Degges',
+        description='''
+            <p>Add Stormpath user management, authentication,
+            and authorization to Flask.
+        ''',
+        docs='http://flask-stormpath.readthedocs.org/en/latest/',
+        github='stormpath/stormpath-flask'
+    ),
 ]
 
 
@@ -697,24 +705,6 @@ unlisted = [
         bitbucket='sjl/flask-csrf',
         notes='''
             Unlisted because duplicates the Flask-SeaSurf extension.
-        '''
-    ),
-    Extension('Flask-Stormpath', 'Randall Degges',
-        description='''
-            <p>User management, authentication, and authorization made easy (and
-            secure!).
-        ''',
-        docs='http://flask-stormpath.readthedocs.org/en/latest/',
-        github='stormpath/stormpath-flask',
-        notes='''
-            Easily create, edit, and remove user accounts -- no database
-            required!  Allows you to easily do things like:
-
-            - User account registration (with email / username and password).
-            - Email verification.
-            - Password reset emails.
-            - Social login.
-            - Complex group permissions.
         '''
     ),
 ]
