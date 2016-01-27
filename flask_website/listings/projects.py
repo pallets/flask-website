@@ -82,6 +82,14 @@ projects = {
             <p>
               San Antonio Allergy Data
         '''),
+        Project(
+            'sopython', 'http://sopython.com/',
+            '<p>Site of the Python chat room on Stack Overflow. '
+            'Includes OAuth authentication, a wiki, and a growing, '
+            'searchable list of "canonical" answers to Python '
+            'questions on SO.</p>',
+            source='https://github.com/sopython/sopython-site'
+        )
     ],
     'apps': [
         Project('hg-review', None, '''
