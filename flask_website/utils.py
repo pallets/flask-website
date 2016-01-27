@@ -123,6 +123,10 @@ def format_datetime(dt):
     return dt.strftime('%Y-%m-%d @ %H:%M')
 
 
+def format_date(dt):
+    return dt.strftime('%Y-%m-%d')
+
+
 def format_timedelta(delta, granularity='second', threshold=.85):
     if isinstance(delta, datetime):
         delta = datetime.utcnow() - delta

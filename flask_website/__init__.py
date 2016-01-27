@@ -53,5 +53,6 @@ from flask_website.database import User, db_session
 from flask_website import utils
 
 app.jinja_env.filters['datetimeformat'] = utils.format_datetime
+app.jinja_env.filters['dateformat'] = utils.format_date
 app.jinja_env.filters['timedeltaformat'] = utils.format_timedelta
 app.jinja_env.filters['displayopenid'] = utils.display_openid

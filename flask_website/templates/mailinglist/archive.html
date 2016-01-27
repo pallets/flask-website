@@ -9,7 +9,7 @@
     <li><a href="{{ thread.url }}">{{ thread.title }}</a>
       <span class=meta>
         by {{ thread.author_name or thread.author_email }}
-        on {{ thread.date.strftime('%Y-%m-%d @ %H:%M') }}
+        on {{ thread.date|datetimeformat }}
         ({{ thread.reply_count }} repl{{ thread.reply_count == 1 and 'y' or 'ies' }})</span>
   {% endfor %}
   </ul>
