@@ -581,6 +581,14 @@ extensions = [
         docs='http://flask-via.soon.build',
         github='thisissoon/Flask-Via',
     ),
+    Extension('Flask-QueryInspect', 'Bret Barker',
+        description='''
+            <p>Provides metrics on SQL queries (using SQLAlchemy) executed
+             for each request.</p>
+        ''',
+        docs='https://github.com/noise/flask-queryinspect',
+        github='https://github.com/noise/flask-queryinspect',
+    ),
 ]
 
 
