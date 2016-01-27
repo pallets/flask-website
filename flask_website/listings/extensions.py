@@ -589,6 +589,14 @@ extensions = [
         docs='https://github.com/noise/flask-queryinspect',
         github='https://github.com/noise/flask-queryinspect',
     ),
+    Extension('Flask-Stormpath', 'Randall Degges',
+        description='''
+            <p>Add Stormpath user management, authentication,
+            and authorization to Flask.
+        ''',
+        docs='http://flask-stormpath.readthedocs.org/en/latest/',
+        github='stormpath/stormpath-flask'
+    ),
 ]
 
 
