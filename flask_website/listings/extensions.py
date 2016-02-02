@@ -72,10 +72,14 @@ extensions = [
     ),
     Extension('Flask-SQLAlchemy', 'Armin Ronacher',
         description='''
-            <p>Adds SQLAlchemy support to Flask.  Quick and easy.
+            <p>Flask-SQLAlchemy is an extension for Flask that adds support
+            for SQLAlchemy to your application. It requires SQLAlchemy 0.8
+            or higher. It aims to simplify using SQLAlchemy with Flask by
+            providing useful defaults and extra helpers that make it easier
+            to accomplish common tasks.
         ''',
         github='mitsuhiko/flask-sqlalchemy',
-        docs='http://pythonhosted.org/Flask-SQLAlchemy/',
+        docs='http://flask-sqlalchemy.pocoo.org/',
         approved=True,
         notes='''
             How to improve: add a better long description to the next release.
