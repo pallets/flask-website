@@ -72,18 +72,18 @@ extensions = [
     ),
     Extension('Flask-SQLAlchemy', 'Armin Ronacher',
         description='''
-            <p>Flask-SQLAlchemy is an extension for Flask that adds support
-            for SQLAlchemy to your application. It requires SQLAlchemy 0.8
-            or higher. It aims to simplify using SQLAlchemy with Flask by
-            providing useful defaults and extra helpers that make it easier
-            to accomplish common tasks.
+            <p>Add <a href="http://www.sqlalchemy.org/">SQLAlchemy</a> support to Flask
+            with automatic configuration and helpers to simplify common web use cases.
+            Major features include:</p>
+            <ul>
+            <li>Handle configuring one or more database connections.</li>
+            <li>Set up sessions scoped to the request/response cycle.</li>
+            <li>Time queries and track model changes for debugging.</li>
+            </ul>
         ''',
         github='mitsuhiko/flask-sqlalchemy',
         docs='http://flask-sqlalchemy.pocoo.org/',
-        approved=True,
-        notes='''
-            How to improve: add a better long description to the next release.
-        '''
+        approved=True
     ),
     Extension('Flask-XML-RPC', 'Matthew Frazier',
         description='''
