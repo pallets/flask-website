@@ -85,6 +85,17 @@ extensions = [
         docs='http://flask-sqlalchemy.pocoo.org/',
         approved=True
     ),
+    Extension('Flask-Migrate', 'Miguel Grinberg',
+        description='''
+            <p><a href="http://www.sqlalchemy.org/">SQLAlchemy</a> database
+            migrations for Flask applications using
+            <a href="https://alembic.readthedocs.org/">Alembic</a>. The
+            database operations are provided as command line arguments for
+            <a href="https://flask-script.readthedocs.org/">Flask-Script</a>.
+        ''',
+        github='miguelgrinberg/flask-migrate',
+        docs='http://pythonhosted.org/Flask-Migrate/',
+    ),
     Extension('Flask-XML-RPC', 'Matthew Frazier',
         description='''
             <p>Adds <a href="http://www.xmlrpc.com/">XML-RPC</a> support to Flask.
