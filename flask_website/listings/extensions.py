@@ -487,6 +487,14 @@ extensions = [
         docs='http://pythonhosted.org/Flask-Shelve/',
         github='jamesls/flask-shelve',
     ),
+    Extension('Flask-RESTful', 'Twilio API Team',
+        description='''
+            <p>Flask-RESTful provides the building blocks for creating a great REST API.
+        ''',
+        docs='https://flask-restful.readthedocs.org/',
+        github='flask-restful/flask-restful',
+        approved=True
+    ),
     Extension('Flask-Restless', 'Jeffrey Finkelstein',
         description='''
             <p>Flask-Restless provides simple generation of ReSTful APIs for
