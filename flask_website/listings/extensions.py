@@ -372,6 +372,16 @@ extensions = [
         docs='http://pythonhosted.org/Flask-Login/',
         approved=True
     ),
+    Extension('Flask-Security', 'Matt Wright',
+        description='''
+            <p>
+              Flask-Security is an opinionated Flask extension which adds
+              basic security and authentication features to your Flask apps
+              quickly and easily.
+        ''',
+        docs='https://pythonhosted.org/Flask-Security/',
+        github='mattupstate/flask-security'
+    ),
     Extension('Flask-Exceptional', 'Jonathan Zempel',
         description='''
             <p>
