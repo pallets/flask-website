@@ -574,6 +574,15 @@ extensions = [
         github='singingwolfboy/flask-dance',
         approved=True,
     ),
+    Extension('Flask-SSE', 'David Baumgold',
+        description='''
+            <a href="http://www.html5rocks.com/en/tutorials/eventsource/basics/">
+            Server Sent Events</a> for Flask.
+        ''',
+        docs='https://flask-sse.readthedocs.org/en/latest/',
+        github='singingwolfboy/flask-sse',
+        approved=True,
+    ),
     Extension('Flask-Limiter', 'Ali-Akber Saifee',
               description='''
             <p>Adds Ratelimiting support to Flask.
