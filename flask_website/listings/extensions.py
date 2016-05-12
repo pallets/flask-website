@@ -638,6 +638,15 @@ extensions = [
         docs='http://flask-stormpath.readthedocs.org/en/latest/',
         github='stormpath/stormpath-flask'
     ),
+    Extension('Flask-Ask', 'John Wheeler',
+        description='''
+            <p>
+              Flask-Ask makes it easy to write Amazon Echo apps with Flask and
+              the Alexa Skills Kit.
+        ''',
+        docs='http://flask-ask.readthedocs.io/en/latest/',
+        github='johnwheeler/flask-ask'
+    ),
 ]
 
 
