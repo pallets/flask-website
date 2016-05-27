@@ -16,8 +16,7 @@
     <a href="{{ url_for('docs.index') }}">docs</a> //
     <a href="{{ url_for('community.index') }}">community</a> //
     <a href="{{ url_for('snippets.index') }}">snippets</a> //
-    <a href="{{ url_for('extensions.index') }}">extensions</a> //
-    <a href="{{ url_for('general.search') }}">search</a>
+    <a href="{{ url_for('extensions.index') }}">extensions</a>
   {% for message in get_flashed_messages() %}
     <p class=message>{{ message }}
   {% endfor %}
