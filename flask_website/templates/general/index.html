@@ -42,7 +42,7 @@
   </blockquote>
   <p class=latestver>
     <strong>Latest Version:</strong>
-    <a href="{{ latest_release.download_url }}" title="Download tarball">{{ latest_release.version }}</a>
+    <a href="{{ latest_release.detail_url }}" title="Download tarball">{{ latest_release.version }}</a>
   <h2>Flask is Fun</h2>
   <pre><span class=ig>from flask import Flask
 app = Flask(__name__)</span>
@@ -60,7 +60,7 @@ def hello():
   <iframe src="http://ghbtns.com/github-btn.html?user=mitsuhiko&amp;repo=flask&amp;type=watch&amp;count=true&amp;size=large" width="190" height="35" style="float: right;border: none"></iframe>
   <h2>Interested?</h2>
   <ul>
-    <li><a href="{{ latest_release.download_url }}">Download latest release</a> ({{ latest_release.version }})
+    <li><a href="{{ latest_release.detail_url }}">Download latest release</a> ({{ latest_release.version }})
     <li>
       <a href="{{ url_for('docs.index') }}">Read the documentation</a> or download as
       <a href="{{ url_for('docs.pdf', version=docs_pdf_version) }}">PDF</a>

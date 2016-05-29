@@ -2,7 +2,6 @@ from urlparse import urljoin
 
 
 server = 'http://pypi.python.org/'
-download_path = '/packages/source/F/Flask/Flask-%s.tar.gz'
 detail_path = '/pypi/Flask/%s'
 
 
@@ -13,12 +12,7 @@ class Release(object):
 
     def to_json(self):
         return dict(version=self.version,
-                    download_url=self.download_url,
                     detail_url=self.detail_url)
-
-    @property
-    def download_url(self):
-        return urljoin(server, download_path % self.version)
 
     @property
     def detail_url(self):
