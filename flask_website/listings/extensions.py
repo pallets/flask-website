@@ -609,7 +609,7 @@ extensions = [
             Register, Confirm email, Login, Change username, Change password, Forgot password,
             Role-based Authorization and Internationalization.
         ''',
-        github='https://github.com/lingthio/flask-user',
+        github='lingthio/flask-user',
         docs='http://pythonhosted.org/Flask-User/',
         approved=True,
     ),
@@ -628,7 +628,7 @@ extensions = [
              for each request.</p>
         ''',
         docs='https://github.com/noise/flask-queryinspect',
-        github='https://github.com/noise/flask-queryinspect',
+        github='noise/flask-queryinspect',
     ),
     Extension('Flask-Stormpath', 'Randall Degges',
         description='''
