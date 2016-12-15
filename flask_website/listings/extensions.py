@@ -248,6 +248,15 @@ extensions = [
         github='coderanger/flask-zen',
         approved=False
     ),
+    Extension('Flask-Static-Compress', 'Alan Hamlett',
+        description='''
+            <p>Automatically minifies, combines, and versions your static CSS
+              and JavaScript assets. Like Django-Compressor for Flask.
+        ''',
+        github='alanhamlett/flask-static-compress',
+        docs='https://github.com/alanhamlett/flask-static-compress',
+        approved=True
+    ),
     Extension('Flask-Assets', u'Michael Elsdörfer',
         description='''
             <p>
