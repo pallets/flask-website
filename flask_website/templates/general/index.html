@@ -57,7 +57,7 @@ def hello():
   <pre><span class=ig>$ </span>pip install Flask
 <span class=ig>$ </span>python hello.py
 <span class=ig> * Running on http://localhost:5000/</span></pre>
-  <iframe src="http://ghbtns.com/github-btn.html?user=mitsuhiko&amp;repo=flask&amp;type=watch&amp;count=true&amp;size=large" width="190" height="35" style="float: right;border: none"></iframe>
+  <iframe src="http://ghbtns.com/github-btn.html?user=pallets&amp;repo=flask&amp;type=watch&amp;count=true&amp;size=large" width="190" height="35" style="float: right;border: none"></iframe>
   <h2>Interested?</h2>
   <ul>
     <li><a href="{{ latest_release.detail_url }}">Download latest release</a> ({{ latest_release.version }})
@@ -65,8 +65,8 @@ def hello():
       <a href="{{ url_for('docs.index') }}">Read the documentation</a> or download as
       <a href="{{ url_for('docs.pdf', version=docs_pdf_version) }}">PDF</a>
     <li><a href="{{ url_for('mailinglist.index') }}">Join the mailinglist</a>
-    <li><a href=http://github.com/mitsuhiko/flask>Fork it on github</a>
-    <li><a href=http://github.com/mitsuhiko/flask/issues>Add issues and feature requests</a>
+    <li><a href=http://github.com/pallets/flask>Fork it on github</a>
+    <li><a href=http://github.com/pallets/flask/issues>Add issues and feature requests</a>
   </ul>
   <h2>What’s in the Box?</h2>
   <ul>
@@ -88,21 +88,21 @@ def hello():
     If you are looking for some example code of applications written with Flask,
     have a look at the sources of the examples on github:
   <ul>
-    <li><a href=http://github.com/mitsuhiko/flask/tree/master/examples/flaskr/>flaskr</a>
+    <li><a href=http://github.com/pallets/flask/tree/master/examples/flaskr/>flaskr</a>
       — a microblog
-    <li><a href=http://github.com/mitsuhiko/flask/tree/master/examples/minitwit/>minitwit</a>
+    <li><a href=http://github.com/pallets/flask/tree/master/examples/minitwit/>minitwit</a>
       — a twitter clone
-    <li><a href=http://github.com/mitsuhiko/flask-website>this website</a>
+    <li><a href=http://github.com/pallets/flask-website>this website</a>
       — static pages + mailinglist archives
   </ul>
   <h2>Contribute</h2>
   <p>Found a bug? Have a good idea for improving Flask? Head over to
-    <a href=http://github.com/mitsuhiko/flask>Flask's github</a> page and
+    <a href=http://github.com/pallets/flask>Flask's github</a> page and
     create a new ticket or fork.  If you just want to chat with fellow
     developers, visit <a href="{{ url_for('community.irc') }}">the IRC
     channel</a> or join <a href="{{ url_for('mailinglist.index') }}"
     >the mailinglist</a>.  You can also directly add issues and feature
-    requests to the <a href="http://github.com/mitsuhiko/flask/issues">
+    requests to the <a href="http://github.com/pallets/flask/issues">
     issue tracker</a>.
   {% if tweets %}
   <h2>Recent Tweets</h2>
@@ -112,6 +112,6 @@ def hello():
   <p class=more><a href="{{ url_for('community.twitter') }}">more &raquo;</a>
   {% endif %}
 
-<a href="http://github.com/mitsuhiko/flask"><img style="position: fixed; top: 0; right: 0; border: 0;"
+<a href="http://github.com/pallets/flask"><img style="position: fixed; top: 0; right: 0; border: 0;"
   src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
 {% endblock %}
