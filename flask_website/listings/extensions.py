@@ -480,6 +480,14 @@ extensions = [
         github='maxcountryman/flask-seasurf',
         approved=True,
     ),
+    Extension('Flask-PonyWhoosh', 'Jonathan Prieto-Cubides & Felipe Rodriguez',
+        description='''
+            <p>
+              A full-text search engine using Pony ORM and Whoosh.
+        ''',
+        docs='http://pythonhosted.org/flask-ponywhoosh/',
+        github='compiteing/flask-ponywhoosh',
+    ),
     Extension('Flask-PyMongo', 'Dan Crosta',
         description='''
             <p>
