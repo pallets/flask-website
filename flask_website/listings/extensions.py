@@ -647,11 +647,12 @@ extensions = [
         docs='http://flask-ask.readthedocs.io/en/latest/',
         github='johnwheeler/flask-ask'
     ),
-    Extension('Flask-Rest-JSONAPI', 'Pierre CHAISY',
+    Extension('Flask-Rest-JSONAPI', 'Pierre Chaisy',
         description='''
             <p>
-              Flash extension to build REST APIs around JSONAPI 1.0 specification
-              with a powerful data layer system.
+              Build REST APIs following the
+              <a href="http://jsonapi.org/format/">JSONAPI</a>
+              specification with a powerful data layer system.
         ''',
         docs='http://flask-rest-jsonapi.readthedocs.io/en/latest/',
         github='miLibris/flask-rest-jsonapi'
