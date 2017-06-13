@@ -255,7 +255,7 @@ extensions = [
         ''',
         github='alanhamlett/flask-static-compress',
         docs='https://github.com/alanhamlett/flask-static-compress',
-        approved=True
+        approved=False
     ),
     Extension('Flask-Assets', u'Michael Elsdörfer',
         description='''
