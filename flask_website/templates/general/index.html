@@ -50,12 +50,10 @@ app = Flask(__name__)</span>
 @app.route("/")
 def hello():
     return "Hello World!"
-
-<span class=ig>if __name__ == "__main__":
-    app.run()</span></pre>
+</pre>
   <h2>And Easy to Setup</h2>
   <pre><span class=ig>$ </span>pip install Flask
-<span class=ig>$ </span>python hello.py
+<span class=ig>$ </span>FLASK_APP=hello.py flask run
 <span class=ig> * Running on http://localhost:5000/</span></pre>
   <iframe src="http://ghbtns.com/github-btn.html?user=pallets&amp;repo=flask&amp;type=watch&amp;count=true&amp;size=large" width="190" height="35" style="float: right;border: none"></iframe>
   <h2>Interested?</h2>
