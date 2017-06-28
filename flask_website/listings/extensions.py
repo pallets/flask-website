@@ -674,6 +674,15 @@ extensions = [
         docs='http://flask-rest-jsonapi.readthedocs.io/en/latest/',
         github='miLibris/flask-rest-jsonapi'
     ),
+    Extension('Flask-Assistant', 'Cam Sweeney',
+        description='''
+            <p>
+             Framework for building conversational apps using
+             Flask and API.AI with integration for Google Assistant.
+        ''',
+        docs='http://flask-assistant.readthedocs.io/en/latest/',
+        github='treethought/flask-assistant'
+    ),
 ]
 
 
