@@ -674,6 +674,14 @@ extensions = [
         docs='http://flask-rest-jsonapi.readthedocs.io/en/latest/',
         github='miLibris/flask-rest-jsonapi'
     ),
+    Extension('Flask-SAML', 'Florian Ruechel',
+        description='''
+            <p>
+              Enable SAML authentication for your webapp.
+        ''',
+        docs='https://flask-saml.readthedocs.io/en/latest/',
+        bitbucket='asecurityteam/flask_saml'
+    ),
 ]
 
 
