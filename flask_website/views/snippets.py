@@ -39,15 +39,16 @@ def edit_comment(id):
     comment = Comment.query.get(id)
     if comment is None:
         abort(404)
+    snippet = comment.snippet
     form = dict(title=comment.title, text=comment.text)
     if request.method == 'POST':
         if 'delete' in request.form:
             db_session.delete(comment)
             db_session.commit()
             flash(u'Comment was deleted.')
-            return redirect(comment.snippet.url)
+            return redirect(snippet.url)
         elif 'cancel' in request.form:
-            return redirect(comment.snippet.url)
+            return redirect(snippet.url)
         form['title'] = request.form['title']
         form['text'] = request.form['text']
         if not form['text']:
@@ -57,7 +58,7 @@ def edit_comment(id):
             comment.text = form['text']
             db_session.commit()
             flash(u'Comment was updated.')
-            return redirect(comment.snippet.url)
+            return redirect(snippet.url)
     return render_template('snippets/edit_comment.html', form=form,
                            comment=comment)
 
