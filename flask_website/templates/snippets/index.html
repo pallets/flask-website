@@ -1,45 +1,11 @@
 {% extends "snippets/layout.html" %}
 {% block title %}Snippets Archive{% endblock %}
 {% block body %}
-  <p>
-    Welcome to the Flask snippet archive.  This is the place where anyone
-    can drop helpful pieces of code for others to use.
-  {% if g.user %}
-  <p>
-    You're signed in as “<span title="{{ g.user.openid }}">{{ g.user.name
-    }}</span>”.  You can <a href="{{ url_for('general.logout')
-    }}">sign out</a> here after you're done if you want.  If you want to
-    change your OpenID login or display name, head over to the
-    <a href="{{ url_for('general.profile') }}">profile</a>.
-  {% else %}
-  <p>
-    In order to add snippets to this page or to add comments, all you need
-    is an <a href=http://en.wikipedia.org/wiki/OpenID>OpenID</a> account.
-    You can <a href="{{ url_for('general.login') }}">sign in</a> here.
-  {% endif %}
-  <p>
-    Want to share something?  Then add a
-    <a href="{{ url_for('.new') }}">new snippet</a>.  Can't find a snippet?
-    Try the <a href="{{ url_for('general.search') }}">search</a>.
-  <h2>Snippets by Category</h2>
+  {{ super() }}
+  <h2>Categories</h2>
   <ul>
   {% for category in categories %}
     <li><a href="{{ category.url }}">{{ category.name }}</a> ({{ category.count }})
   {% endfor %}
   </ul>
-  {% if recent %}
-  <h2>Recently Added</h2>
-  <ul>
-  {% for snippet in recent %}
-    <li><a href="{{ snippet.url }}">{{ snippet.title }}</a> in
-      <a href="{{ snippet.category.url }}">{{ snippet.category.name }}</a>
-  {% endfor %}
-  </ul>
-  {% endif %}
-  {% if g.user.is_admin %}
-  <h2>Admin Tools</h2>
-  <ul>
-    <li><a href="{{ url_for('.manage_categories') }}">Manage categories</a>
-  </ul>
-  {% endif %}
 {% endblock %}
