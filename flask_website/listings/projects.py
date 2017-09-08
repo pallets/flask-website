@@ -159,6 +159,13 @@ projects = {
               A hackernews/reddit clone written with Flask and
               various Flask extensions.
         ''', source='https://bitbucket.org/danjac/newsmeme'),
+        Project('Indico', 'https://getindico.io/', u'''
+            <p>
+              Indico is a full-fledged meeting and conference management
+              system developed at CERN. It includes advanced features such
+              as integration with collaborative systems, a plugin system
+              and support for SSO-based authentication.
+        ''', source='https://github.com/indico/indico/'),
     ]
 
 }
