@@ -47,6 +47,12 @@ projects = {
               reporters provide their listeners with news, reviews, feature
               shows and interviews.
         '''),
+        Project(u'MetalSpy', 'https://www.metalspy.de/', '''
+            <p>
+              MetalSpy.de is the portfolio website of a german hobby
+              photographer featuring mainly photos of metal bands,
+              festivals, fantasy conventions and cosplay.
+        '''),
         Project('Steven Harms\' Website', 'http://www.sharms.org/', u'''
             <p>
               Personal website of Steven Harms.
