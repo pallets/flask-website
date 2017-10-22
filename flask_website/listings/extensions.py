@@ -627,7 +627,7 @@ extensions = [
             Role-based Authorization and Internationalization.
         ''',
         github='lingthio/flask-user',
-        docs='http://pythonhosted.org/Flask-User/',
+        docs='http://flask-user.readthedocs.io/',
         approved=True,
     ),
     Extension('Flask-Via', 'SOON_, Chris Reeves',
