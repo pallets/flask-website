@@ -37,16 +37,6 @@ class Extension(object):
 # This list contains all extensions that were approved as well as those which
 # passed listing.
 extensions = [
-    Extension('Flask-OAuth', 'Armin Ronacher',
-        description='''
-            <p>Adds <a href="http://oauth.net/">OAuth</a> support to Flask.
-        ''',
-        github='mitsuhiko/flask-oauth',
-        docs='http://pythonhosted.org/Flask-OAuth/',
-        notes='''
-            Short long description, missing tests.
-        '''
-    ),
     Extension('Flask-OpenID', 'Armin Ronacher',
         description='''
             <p>Adds <a href="http://openid.net/">OpenID</a> support to Flask.
