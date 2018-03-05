@@ -674,6 +674,14 @@ extensions = [
         docs='http://flask-rest-jsonapi.readthedocs.io/en/latest/',
         github='miLibris/flask-rest-jsonapi'
     ),
+    Extension('Flask-Snow', 'Robert Wikman',
+        description='''
+            <p>
+              Adds pysnow (ServiceNow) support to Flask
+        ''',
+        docs='http://flask-snow.readthedocs.io/en/latest/',
+        github='rbw0/flask-snow'
+    ),    
 ]
 
 
