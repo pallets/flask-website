@@ -674,6 +674,16 @@ extensions = [
         docs='http://flask-rest-jsonapi.readthedocs.io/en/latest/',
         github='miLibris/flask-rest-jsonapi'
     ),
+    Extension('Flask-Snow', 'Robert Wikman',
+        description='''
+            <p>
+              Flask-snow enables easy access to the REST API in the ServiceNow ITSM platform 
+              with the help of the <a href="http://github.com/rbw0/pysnow">pysnow library</a>.
+              Additionally, it supports OAuth for a seamless authentication / authorization experience.
+        ''',
+        docs='http://flask-snow.readthedocs.io/en/latest/',
+        github='rbw0/flask-snow'
+    ),    
 ]
 
 
