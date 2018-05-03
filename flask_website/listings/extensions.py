@@ -683,7 +683,22 @@ extensions = [
         ''',
         docs='http://flask-snow.readthedocs.io/en/latest/',
         github='rbw0/flask-snow'
-    ),    
+    ),
+    Extension('Flask-MonitoringDashboard', 'Patrick Vogel',
+        description='''
+            <p>
+              Flask Monitoring Dashboard is an extension that offers 3 main functionalities with little effort from the 
+              Flask developer:
+              <ol>
+                <li>Monitor the Flask application</li>
+                <li>Monitor the test coverage</li>
+                <li>Collect extra information about slow requests (so called outliers)</li>
+              </ol>
+            </p>
+            ''',
+        docs='http://flask-monitoringdashboard.readthedocs.io/',
+        github='flask-dashboard/Flask-MonitoringDashboard'
+    ),
 ]
 
 
