@@ -687,12 +687,12 @@ extensions = [
     Extension('Flask-MonitoringDashboard', 'Patrick Vogel',
         description='''
             <p>
-              Flask Monitoring Dashboard is an extension that offers 3 main functionalities with little effort from the 
+              Flask-MonitoringDashboard is an extension that offers 3 main functionalities with little effort from the 
               Flask developer:
               <ol>
-                <li>Monitor the Flask application</li>
-                <li>Monitor the test coverage</li>
-                <li>Collect extra information about slow requests (so called outliers)</li>
+                <li>Monitor and visualize the performance of a Flask application.</li>
+                <li>Monitor and visualize the test coverage.</li>
+                <li>Collect extra information about request outliers (requests which are slower than normal).</li>
               </ol>
             </p>
             ''',
