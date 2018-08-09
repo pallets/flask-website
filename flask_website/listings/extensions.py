@@ -683,7 +683,58 @@ extensions = [
         ''',
         docs='http://flask-snow.readthedocs.io/en/latest/',
         github='rbw0/flask-snow'
-    ),    
+    ),
+    Extension('Flask-Dropzone', 'Grey Li',
+        description='''
+            <p>
+              Upload file in Flask application with <a href="http://dropzonejs.com">Dropzone.js</a>.
+        ''',
+        docs='https://flask-dropzone.readthedocs.io/en/latest/',
+        github='greyli/flask-dropzone',
+    ),
+    Extension('Flask-CKEditor', 'Grey Li',
+        description='''
+            <p>
+              <a href="https://ckeditor.com">CKEditor</a> integration for Flask, including image 
+              upload, code syntax highlight and more.
+        ''',
+        docs='https://flask-ckeditor.readthedocs.io/en/latest/',
+        github='greyli/flask-ckeditor',
+    ),
+    Extension('Bootstrap-Flask', 'Grey Li',
+        description='''
+            <p>
+              <a href="https://getbootstrap.com/">Bootstrap 4</a> helper for Flask/Jinja2. 
+              Based on Flask-Bootstrap, but lighter and better.
+        ''',
+        docs='https://bootstrap-flask.readthedocs.io/en/latest/',
+        github='greyli/bootstrap-flask',
+    ),
+    Extension('Flask-Avatars', 'Grey Li',
+        description='''
+            <p>
+              All avatar generators in one place. Including:
+              <ul>
+                <li>Default avatar</li>
+                <li>Gravatar</li>
+                <li>Robohash</li>
+                <li>Social media avatar</li>
+                <li>Identicon generation</li>
+                <li>Avatar crop</li>
+              </ul>
+        ''',
+        docs='https://flask-avatars.readthedocs.io/en/latest/',
+        github='greyli/flask-avatars',
+    ),
+    Extension('Flask-Share', 'Grey Li',
+        description='''
+            <p>
+              Create social share component in Jinja2 template based on 
+              <a href="https://github.com/overtrue/share.js/">share.js</a>.
+        ''',
+        docs='https://flask-share.readthedocs.io/en/latest/',
+        github='greyli/flask-share',
+    ),
 ]
 
 
