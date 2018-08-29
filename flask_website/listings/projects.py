@@ -166,6 +166,28 @@ projects = {
               as integration with collaborative systems, a plugin system
               and support for SSO-based authentication.
         ''', source='https://github.com/indico/indico/'),
+        Project('SayHello', 'http://sayhello.helloflask.com', u'''
+            <p>
+              A simple message board.
+        ''', source='https://github.com/greyli/sayhello'),
+        Project('Bluelog', 'http://bluelog.helloflask.com', u'''
+            <p>
+              A blog engine that supports category and resource management.
+        ''', source='https://github.com/greyli/bluelog'),
+        Project('Albumy', 'http://albumy.helloflask.com', u'''
+            <p>
+              A full-featured photo-sharing social networking.
+        ''', source='https://github.com/greyli/albumy'),
+        Project('Todoism', 'http://todoism.helloflask.com', u'''
+            <p>
+              A to-do application implements as SPA, it supports 
+              i18n (Flask-Babel) and provides web APIs.
+        ''', source='https://github.com/greyli/todoism'),
+        Project('CatChat', 'http://catchat.helloflask.com', u'''
+            <p>
+              A chat room based on WebSocket (Flask-Socket-IO), fetured 
+              with Markdown support and code syntax highlighting.
+        ''', source='https://github.com/greyli/catchat'),
     ]
 
 }
