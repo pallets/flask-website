@@ -7,12 +7,13 @@ from flask import Markup
 class Extension(object):
 
     def __init__(self, name, author, description,
-                 github=None, bitbucket=None, docs=None, website=None,
+                 github=None, gitlab=None, bitbucket=None, docs=None, website=None,
                  approved=False, notes=None):
         self.name = name
         self.author = author
         self.description = Markup(description)
         self.github = github
+        self.gitlab = gitlab
         self.bitbucket = bitbucket
         self.docs = docs
         self.website = website
