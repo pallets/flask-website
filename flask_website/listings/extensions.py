@@ -685,6 +685,15 @@ extensions = [
         docs='http://flask-snow.readthedocs.io/en/latest/',
         github='rbw0/flask-snow'
     ),    
+    Extension('Flask-Dramatiq', 'Étienne Bersac',
+        description='''
+            <p>Plugs <a href="https://dramatiq.io/">Dramatiq</a> task queue in your
+            Flask web app.
+        ''',
+        docs='https://flask-dramatiq.readthedocs.io/',
+        gitlab='https://gitlab.com/bersace/flask-dramatiq',
+        approved=False,
+    ),
 ]
 
 
