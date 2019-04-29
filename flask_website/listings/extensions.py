@@ -677,13 +677,22 @@ extensions = [
     Extension('Flask-Snow', 'Robert Wikman',
         description='''
             <p>
-              Flask-snow enables easy access to the REST API in the ServiceNow ITSM platform 
+              Flask-snow enables easy access to the REST API in the ServiceNow ITSM platform
               with the help of the <a href="http://github.com/rbw0/pysnow">pysnow library</a>.
               Additionally, it supports OAuth for a seamless authentication / authorization experience.
         ''',
         docs='http://flask-snow.readthedocs.io/en/latest/',
         github='rbw0/flask-snow'
-    ),    
+    ),
+    Extension('flask-keycloak', 'Akhil Lawrence',
+        description='''
+            <p>Flask extension for
+            <a href=https://www.keycloak.org>Keycloak</a> integration.
+        ''',
+        docs='https://github.com/akhilputhiry/flask-keycloak/blob/master/README.md',
+        github='akhilputhiry/flask-keycloak',
+        approved=False
+    ),
 ]
 
 
