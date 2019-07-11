@@ -681,6 +681,21 @@ extensions = [
         ''',
         docs='http://flask-snow.readthedocs.io/en/latest/',
         github='rbw0/flask-snow'
+    ),
+    Extension('Flask-MonitoringDashboard', 'Patrick Vogel',
+        description='''
+            <p>
+              Flask-MonitoringDashboard is an extension that offers 3 main functionalities with little effort from the 
+              Flask developer:
+              <ol>
+                <li>Monitor and visualize the performance of a Flask application.</li>
+                <li>Monitor and visualize the test coverage.</li>
+                <li>Collect extra information about request outliers (requests which are slower than normal).</li>
+              </ol>
+            </p>
+            ''',
+        docs='http://flask-monitoringdashboard.readthedocs.io/',
+        github='flask-dashboard/Flask-MonitoringDashboard'
     ),    
     Extension('Flask-Assistant', 'Cam Sweeney',
         description='''
