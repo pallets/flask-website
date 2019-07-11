@@ -684,6 +684,15 @@ extensions = [
         docs='http://flask-snow.readthedocs.io/en/latest/',
         github='rbw0/flask-snow'
     ),    
+    Extension('Flask-Assistant', 'Cam Sweeney',
+        description='''
+            <p>
+             Framework for building conversational apps using
+             Flask and API.AI with integration for Google Assistant.
+        ''',
+        docs='http://flask-assistant.readthedocs.io/en/latest/',
+        github='treethought/flask-assistant'
+    ),
 ]
 
 
