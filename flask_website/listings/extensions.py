@@ -494,7 +494,7 @@ extensions = [
             <p>
               A full-text search engine using Pony ORM and Whoosh.
         ''',
-        docs='http://pythonhosted.org/flask-ponywhoosh/',
+        docs='https://pythonhosted.org/Flask-PonyWhoosh/',
         github='compiteing/flask-ponywhoosh',
     ),
     Extension('Flask-PyMongo', 'Dan Crosta',
