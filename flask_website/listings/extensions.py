@@ -682,6 +682,14 @@ extensions = [
         ''',
         docs='http://flask-snow.readthedocs.io/en/latest/',
         github='rbw0/flask-snow'
+    ),
+    Extension('flask-keycloak', 'Akhil Lawrence',
+        description='''
+            <p>Flask extension for
+            <a href=https://www.keycloak.org>Keycloak</a> integration.
+        ''',
+        docs='https://github.com/akhilputhiry/flask-keycloak/blob/master/README.md',
+        github='akhilputhiry/flask-keycloak',
     ),   
     Extension('Flask-MailboxValidator', 'MailboxValidator,
         description='''
