@@ -1,8 +1,8 @@
 from urlparse import urljoin
 
 
-server = 'http://pypi.python.org/'
-detail_path = '/pypi/Flask/%s'
+server = 'https://pypi.org/'
+detail_path = '/project/Flask/%s/'
 
 
 class Release(object):
@@ -43,4 +43,9 @@ releases = map(Release, [
     '0.12',
     '0.12.1',
     '0.12.2',
+    '0.12.3',
+    '0.12.4',
+    '1.0',
+    '1.0.1',
+    '1.0.2',
 ])

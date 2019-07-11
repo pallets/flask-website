@@ -8,5 +8,4 @@ Pygments
 SQLAlchemy
 Werkzeug
 Whoosh
-distribute
 python-openid

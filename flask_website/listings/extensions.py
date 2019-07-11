@@ -494,7 +494,7 @@ extensions = [
             <p>
               A full-text search engine using Pony ORM and Whoosh.
         ''',
-        docs='http://pythonhosted.org/flask-ponywhoosh/',
+        docs='https://pythonhosted.org/Flask-PonyWhoosh/',
         github='compiteing/flask-ponywhoosh',
     ),
     Extension('Flask-PyMongo', 'Dan Crosta',
@@ -627,7 +627,7 @@ extensions = [
             Role-based Authorization and Internationalization.
         ''',
         github='lingthio/flask-user',
-        docs='http://pythonhosted.org/Flask-User/',
+        docs='http://flask-user.readthedocs.io/',
         approved=True,
     ),
     Extension('Flask-Via', 'SOON_, Chris Reeves',
@@ -674,6 +674,16 @@ extensions = [
         docs='http://flask-rest-jsonapi.readthedocs.io/en/latest/',
         github='miLibris/flask-rest-jsonapi'
     ),
+    Extension('Flask-Snow', 'Robert Wikman',
+        description='''
+            <p>
+              Flask-snow enables easy access to the REST API in the ServiceNow ITSM platform 
+              with the help of the <a href="http://github.com/rbw0/pysnow">pysnow library</a>.
+              Additionally, it supports OAuth for a seamless authentication / authorization experience.
+        ''',
+        docs='http://flask-snow.readthedocs.io/en/latest/',
+        github='rbw0/flask-snow'
+    ),    
     Extension('Flask-Assistant', 'Cam Sweeney',
         description='''
             <p>

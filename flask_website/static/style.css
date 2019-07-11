@@ -84,6 +84,11 @@ input.openid            { background: url(openid.png) no-repeat 4px center;
 .comments ol        { margin: 15px 0 15px 20px; padding: 0; }
 #preview            { margin: 20px -30px; padding: 10px 30px; background: #fafafa; }
 
+/* snippet warning */
+.snippets-warning   { background: #fdd; margin: 0 -30px 0 -30px; padding: 10px 30px;
+              font-size: 14px; border-top: 1px solid #ebb; border-bottom: 1px solid #ebb; }
+.snippets-warning p { margin: 10px 0; }
+
 /* mailinglist */
 .pagination         { text-align: center; font-size: 15px; margin: 20px 0 0 0; }
 .disabled           { color: #888; }
