@@ -675,13 +675,26 @@ extensions = [
     Extension('Flask-Snow', 'Robert Wikman',
         description='''
             <p>
-              Flask-snow enables easy access to the REST API in the ServiceNow ITSM platform 
+              Flask-snow enables easy access to the REST API in the ServiceNow ITSM platform
               with the help of the <a href="http://github.com/rbw0/pysnow">pysnow library</a>.
               Additionally, it supports OAuth for a seamless authentication / authorization experience.
         ''',
         docs='http://flask-snow.readthedocs.io/en/latest/',
         github='rbw0/flask-snow'
     ),
+    Extension('Flask-Praetorian', 'Tucker Beck',
+        description='''
+            <p>
+              API security should be strong, simple, and precise like a Roman
+              Legionary. This package aims to provide that. Using JWT tokens as
+              implemented by PyJWT, flask-praetorian uses a very simple
+              interface to make sure that the users accessing your API’s
+              endpoints are provisioned with the correct roles for access.
+        ''',
+        docs='http://flask-praetorian.readthedocs.io/en/latest/',
+        github='dusktreader/flask-praetorian',
+        approved=False,
+    )
     Extension('Flask-MonitoringDashboard', 'Patrick Vogel',
         description='''
             <p>
