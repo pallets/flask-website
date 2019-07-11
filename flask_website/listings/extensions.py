@@ -37,16 +37,6 @@ class Extension(object):
 # This list contains all extensions that were approved as well as those which
 # passed listing.
 extensions = [
-    Extension('Flask-OAuth', 'Armin Ronacher',
-        description='''
-            <p>Adds <a href="http://oauth.net/">OAuth</a> support to Flask.
-        ''',
-        github='mitsuhiko/flask-oauth',
-        docs='http://pythonhosted.org/Flask-OAuth/',
-        notes='''
-            Short long description, missing tests.
-        '''
-    ),
     Extension('Flask-OpenID', 'Armin Ronacher',
         description='''
             <p>Adds <a href="http://openid.net/">OpenID</a> support to Flask.
@@ -494,7 +484,7 @@ extensions = [
             <p>
               A full-text search engine using Pony ORM and Whoosh.
         ''',
-        docs='http://pythonhosted.org/flask-ponywhoosh/',
+        docs='https://pythonhosted.org/Flask-PonyWhoosh/',
         github='compiteing/flask-ponywhoosh',
     ),
     Extension('Flask-PyMongo', 'Dan Crosta',
@@ -674,6 +664,14 @@ extensions = [
         docs='http://flask-rest-jsonapi.readthedocs.io/en/latest/',
         github='miLibris/flask-rest-jsonapi'
     ),
+    Extension('Flask-SAML', 'Florian Ruechel',
+        description='''
+            <p>
+              Enable SAML authentication for your webapp.
+        ''',
+        docs='https://flask-saml.readthedocs.io/en/latest/',
+        bitbucket='asecurityteam/flask_saml'
+    ),
     Extension('Flask-Snow', 'Robert Wikman',
         description='''
             <p>
@@ -696,6 +694,30 @@ extensions = [
         docs='http://flask-praetorian.readthedocs.io/en/latest/',
         github='dusktreader/flask-praetorian',
         approved=False,
+    )
+    Extension('Flask-MonitoringDashboard', 'Patrick Vogel',
+        description='''
+            <p>
+              Flask-MonitoringDashboard is an extension that offers 3 main functionalities with little effort from the 
+              Flask developer:
+              <ol>
+                <li>Monitor and visualize the performance of a Flask application.</li>
+                <li>Monitor and visualize the test coverage.</li>
+                <li>Collect extra information about request outliers (requests which are slower than normal).</li>
+              </ol>
+            </p>
+            ''',
+        docs='http://flask-monitoringdashboard.readthedocs.io/',
+        github='flask-dashboard/Flask-MonitoringDashboard'
+    ),    
+    Extension('Flask-Assistant', 'Cam Sweeney',
+        description='''
+            <p>
+             Framework for building conversational apps using
+             Flask and API.AI with integration for Google Assistant.
+        ''',
+        docs='http://flask-assistant.readthedocs.io/en/latest/',
+        github='treethought/flask-assistant'
     ),
 ]
 
