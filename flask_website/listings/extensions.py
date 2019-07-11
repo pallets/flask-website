@@ -494,7 +494,7 @@ extensions = [
             <p>
               A full-text search engine using Pony ORM and Whoosh.
         ''',
-        docs='http://pythonhosted.org/flask-ponywhoosh/',
+        docs='https://pythonhosted.org/Flask-PonyWhoosh/',
         github='compiteing/flask-ponywhoosh',
     ),
     Extension('Flask-PyMongo', 'Dan Crosta',
@@ -627,7 +627,7 @@ extensions = [
             Role-based Authorization and Internationalization.
         ''',
         github='lingthio/flask-user',
-        docs='http://pythonhosted.org/Flask-User/',
+        docs='http://flask-user.readthedocs.io/',
         approved=True,
     ),
     Extension('Flask-Via', 'SOON_, Chris Reeves',
@@ -681,6 +681,25 @@ extensions = [
         ''',
         docs='https://flask-saml.readthedocs.io/en/latest/',
         bitbucket='asecurityteam/flask_saml'
+    ),
+    Extension('Flask-Snow', 'Robert Wikman',
+        description='''
+            <p>
+              Flask-snow enables easy access to the REST API in the ServiceNow ITSM platform 
+              with the help of the <a href="http://github.com/rbw0/pysnow">pysnow library</a>.
+              Additionally, it supports OAuth for a seamless authentication / authorization experience.
+        ''',
+        docs='http://flask-snow.readthedocs.io/en/latest/',
+        github='rbw0/flask-snow'
+    ),    
+    Extension('Flask-Assistant', 'Cam Sweeney',
+        description='''
+            <p>
+             Framework for building conversational apps using
+             Flask and API.AI with integration for Google Assistant.
+        ''',
+        docs='http://flask-assistant.readthedocs.io/en/latest/',
+        github='treethought/flask-assistant'
     ),
 ]
 

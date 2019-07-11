@@ -47,10 +47,12 @@ projects = {
               reporters provide their listeners with news, reviews, feature
               shows and interviews.
         '''),
-        Project('Steven Harms\' Website', 'http://www.sharms.org/', u'''
+        Project(u'MetalSpy', 'https://www.metalspy.de/', '''
             <p>
-              Personal website of Steven Harms.
-        ''', source='http://github.com/sharms/HomePage'),
+              MetalSpy.de is the portfolio website of a german hobby
+              photographer featuring mainly photos of metal bands,
+              festivals, fantasy conventions and cosplay.
+        '''),
         Project('ThadeusB\'s Website', 'http://thadeusb.com/', u'''
             <p>
               Personal website of ThadeusB.
@@ -59,28 +61,9 @@ projects = {
             <p>
               A flask-powered anti-social delicious clone
         '''),
-        Project('Planete GT LL', None, u'''
-            <p>
-              News aggregator for the open source workgroup of the Paris Region
-              innovation cluster, Systematic.
-        ''', source='https://github.com/sfermigier/Planet-GTLL'),
-        Project('Battlefield3 Development News Aggregator', None, u'''
-            <p>
-              Development news aggregator for Battlefield3.  Tracks twitter
-              accounts and forum posts by DICE developers.
-        ''', source='https://github.com/mitsuhiko/bf3-aggregator'),
-        Project('Get Python 3', None, u'''
-            <p>
-              A website to collect feedback of Python third party
-              libraries about its compatibility with Python 3
-        ''', source='https://github.com/baijum/getpython3'),
         Project('DotShare', 'http://dotshare.it/', u'''
             <p>
               Socially driven website for sharing Linux/Unix dot files.
-        '''),
-        Project('saallergy.info', 'http://saallergy.info/', u'''
-            <p>
-              San Antonio Allergy Data
         '''),
         Project(
             'sopython', 'http://sopython.com/',
@@ -97,10 +80,6 @@ projects = {
               hg-review is a code review system for Mercurial.  It is available
               GPL2 license.
         ''', source='http://bitbucket.org/sjl/hg-review/'),
-        Project('Cockerel', None, '''
-            <p>
-              An Online Logic Assistent Based on Coq.
-        ''', source='http://github.com/dcolish/Cockerel'),
         Project('Ryshcate', None, '''
             <p>
               Ryshcate is a Flask powered pastebin with sourcecode
@@ -122,7 +101,7 @@ projects = {
                neat and interesting.  Store it on Remar.kZ without having
                to enter your credentials.
         ''', source='http://bitbucket.org/little_arhat/remarkz'),
-        Project('Dominion', None, u'''
+        Project('Domination', None, u'''
             <p>
               Domination is a clone of a well-known card game.
         ''', source='https://bitbucket.org/xoraxax/domination/'),
@@ -153,6 +132,35 @@ projects = {
               A hackernews/reddit clone written with Flask and
               various Flask extensions.
         ''', source='https://bitbucket.org/danjac/newsmeme'),
+        Project('Indico', 'https://getindico.io/', u'''
+            <p>
+              Indico is a full-fledged meeting and conference management
+              system developed at CERN. It includes advanced features such
+              as integration with collaborative systems, a plugin system
+              and support for SSO-based authentication.
+        ''', source='https://github.com/indico/indico/'),
+        Project('SayHello', 'http://sayhello.helloflask.com', u'''
+            <p>
+              A simple message board.
+        ''', source='https://github.com/greyli/sayhello'),
+        Project('Bluelog', 'http://bluelog.helloflask.com', u'''
+            <p>
+              A blog engine that supports category and resource management.
+        ''', source='https://github.com/greyli/bluelog'),
+        Project('Albumy', 'http://albumy.helloflask.com', u'''
+            <p>
+              A full-featured photo-sharing social networking.
+        ''', source='https://github.com/greyli/albumy'),
+        Project('Todoism', 'http://todoism.helloflask.com', u'''
+            <p>
+              A to-do application implements as SPA, it supports 
+              i18n (Flask-Babel) and provides web APIs.
+        ''', source='https://github.com/greyli/todoism'),
+        Project('CatChat', 'http://catchat.helloflask.com', u'''
+            <p>
+              A chat room based on WebSocket (Flask-Socket-IO), fetured 
+              with Markdown support and code syntax highlighting.
+        ''', source='https://github.com/greyli/catchat'),
     ]
 
 }

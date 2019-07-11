@@ -1,23 +1,19 @@
 {% extends "snippets/layout.html" %}
 {% block title %}{{ snippet.title }}{% endblock %}
-{% block head %}
-  {{ super() }}
-  <link href="{{ url_for('.comments_feed', id=snippet.id) }}" rel="alternate" title="Snippet Comments" type="application/atom+xml">
-{% endblock %}
 {% block body %}
+  {{ super() }}
   <h2>{{ snippet.title }}</h2>
   <p class=snippet-author>Posted by {{ snippet.author.name }}
     on {{ snippet.pub_date|datetimeformat }}
     and filed in <a href="{{ snippet.category.url }}">{{ snippet.category.name }}</a>
-    {% if snippet.author == g.user or g.user.is_admin %}
+    {% if g.user.is_admin %}
       (<a href="{{ url_for('.edit', id=snippet.id) }}">edit</a>)
     {% endif %}
   {{ snippet.rendered_body }}
   <p><small>This snippet by {{ snippet.author.name }} can be used freely for
     anything you like. Consider it public domain.</small>
-  {% if snippet.comments or g.user %}
-  <div id=comment-box>
   {% if snippet.comments %}
+  <div id=comment-box>
     <h2>Comments</h2>
     <ul class=comments>
       {% for comment in snippet.comments %}
@@ -32,17 +28,6 @@
         <div class=body>{{ comment.rendered_text }}</div></li>
       {% endfor %}
     </ul>
-  {% endif %}
-  {% if g.user %}
-  <div id=add-comment>
-    <h2>Add Comment</h2>
-    <form action="" method=post>
-      <p>Title: <input type=text name=title value="{{ request.form.title }}" size=30>
-      <p><textarea name=text cols=40 rows=8>{{ request.form.text }}</textarea>
-      <p><input type=submit value="Add Comment">
-    </form>
-  </div>
-  {% endif %}
   </div>
   {% endif %}
 {% endblock %}
