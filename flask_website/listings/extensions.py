@@ -7,12 +7,13 @@ from flask import Markup
 class Extension(object):
 
     def __init__(self, name, author, description,
-                 github=None, bitbucket=None, docs=None, website=None,
+                 github=None, gitlab=None, bitbucket=None, docs=None, website=None,
                  approved=False, notes=None):
         self.name = name
         self.author = author
         self.description = Markup(description)
         self.github = github
+        self.gitlab = gitlab
         self.bitbucket = bitbucket
         self.docs = docs
         self.website = website
@@ -752,7 +753,6 @@ extensions = [
         ''',
         docs='http://flask-praetorian.readthedocs.io/en/latest/',
         github='dusktreader/flask-praetorian',
-        approved=False,
     ),
     Extension('Flask-MonitoringDashboard', 'Patrick Vogel',
         description='''
@@ -768,7 +768,15 @@ extensions = [
             ''',
         docs='http://flask-monitoringdashboard.readthedocs.io/',
         github='flask-dashboard/Flask-MonitoringDashboard'
-    ),    
+    ),
+    Extension('Flask-Dramatiq', 'Étienne Bersac',
+        description='''
+            <p>Plugs <a href="https://dramatiq.io/">Dramatiq</a> task queue in your
+            Flask web app.
+        ''',
+        docs='https://flask-dramatiq.readthedocs.io/',
+        gitlab='https://gitlab.com/bersace/flask-dramatiq',
+    ),
     Extension('Flask-Assistant', 'Cam Sweeney',
         description='''
             <p>
