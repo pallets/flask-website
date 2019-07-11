@@ -681,6 +681,14 @@ extensions = [
         ''',
         docs='http://flask-snow.readthedocs.io/en/latest/',
         github='rbw0/flask-snow'
+    ),   
+    Extension('Flask-MailboxValidator', 'MailboxValidator,
+        description='''
+            <p>
+              Flask-MailboxValidator provides an easy way to call the MailboxValidator API which validates if an email address is a valid one.
+        ''',
+        docs='https://flask-mailboxvalidator.readthedocs.io/en/latest/',
+        github='MailboxValidator/Flask_MailboxValidator'
     ),
     Extension('Flask-Dropzone', 'Grey Li',
         description='''
